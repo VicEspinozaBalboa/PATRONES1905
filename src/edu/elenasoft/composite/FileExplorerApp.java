@@ -3,6 +3,7 @@ package edu.elenasoft.composite;
 public class FileExplorerApp {
 
     public void print() {
+      /* 
       var rootDirectory = new Directory("root");
       var file0 = new FileLeaf("zero");
       rootDirectory.add(file0);
@@ -25,5 +26,19 @@ public class FileExplorerApp {
       subDirectory.print();
   
       file1.print();
+      */
+
+      FileInfo  file1 = new FileInfo("file1.txt", 10);
+      FileInfo  file2 = new FileInfo("file2.txt", 20);
+      FileInfo  file3 = new FileInfo("file3.txt", 20);
+
+      FolderInfo folder1 = new FolderInfo("Folder");
+      folder1.add(file1);
+      folder1.add(file2);
+      folder1.add(file3);
+
+
+      folder1.showDetails();
+
     }
   }
