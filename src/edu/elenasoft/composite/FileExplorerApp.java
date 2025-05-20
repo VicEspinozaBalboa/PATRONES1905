@@ -28,6 +28,7 @@ public class FileExplorerApp {
       file1.print();
       */
 
+      //KATA 1
       FileInfo  file1 = new FileInfo("file1.txt", 10);
       FileInfo  file2 = new FileInfo("file2.txt", 20);
       FileInfo  file3 = new FileInfo("file3.txt", 20);
@@ -39,6 +40,16 @@ public class FileExplorerApp {
 
 
       folder1.showDetails();
+
+      //KATA 3
+      Employee employe1 = new IndividualEmployee("Pedro", 1000);
+      Employee  employe2 = new IndividualEmployee("Juan", 2000);
+
+      Manager manager1 = new Manager("Alicia");
+      manager1.add(employe1);
+      manager1.add(employe2);
+
+      manager1.showDetails();
 
     }
   }
